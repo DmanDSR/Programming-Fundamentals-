@@ -1,0 +1,35 @@
+#include <stdio.h>
+ 
+ int main(void){
+ 
+	int temp = 0;
+	char heater = 'F', cooler = 'F', fan = 'F';
+	
+	if(temp < 66){
+	
+		heater = 'O';
+		cooler = 'F';
+		fan = 'F';
+		
+		printf("The heater is ON" );
+		
+	}
+	else if (temp > 72){
+	
+		heater = 'F';
+		cooler = 'O';
+		fan = 'F';
+		
+		printf("The cooler is ON");
+		
+	}
+	else{
+		
+		heater = 'F';
+		cooler = 'F';
+		fan = 'O';
+		
+		printf("The fan is ON");
+		
+	}
+ }

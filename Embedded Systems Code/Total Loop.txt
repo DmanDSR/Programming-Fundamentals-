@@ -1,0 +1,17 @@
+ #include <stdio.h>
+ 
+ int main(void){
+ 
+	int total = 0, i;
+	
+	while(total < 1000){
+	
+		total += 1;
+	
+	}
+ 
+	printf("The Total is %d" + total);
+ 
+ }
+ 
+
