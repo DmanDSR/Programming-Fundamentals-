@@ -1,16 +1,16 @@
 Coding Projects that Help me learned Fundamentals and Concepts in coding
 
 1. Bash Name & Numbers
-   - Code to take in input from the user and display it
+   - The code captures user input and presents it for display.
 
 2. Coin Toss Simulator
-   -  This program provides a simple simulation of coin tossing while also demonstrating file handling and user interaction in a practical context.
+   -  This program offers a straightforward coin-tossing simulation while also showcasing practical implementations of file handling and user interaction.
 
 3. Embedded Systems Code
-   - This Folder has code I did to better understand some Embedded Systems coding
+   - This folder contains code I wrote to deepen my understanding of Embedded Systems programming.
 
 5. GPA Tracker (Windows)
-   - This code takes in Input from a user about a student and then displays it
+   - This code captures user input regarding a student and subsequently presents the information
 
 6. Popular Name Checker
    - This program reads a list of names from two text files and stores them in an array. It prompts the user to input a name they want to check for popularity during the year 2000. The program then searches the array to determine if the provided name was popular during that year.
