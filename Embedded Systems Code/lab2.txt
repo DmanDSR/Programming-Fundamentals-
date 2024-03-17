@@ -1,0 +1,104 @@
+/*
+ * File:   Lab2.c
+ * Author: 
+ *
+ * Created on November 1, 2022, 5:45 PM
+ */
+
+/*
+This C code is meant for a PIC18F4520 microcontroller. It involves toggling pins and setting specific values on PORTA, PORTB, and PORTD, for testing or demonstration purposes.
+*/
+
+Here's what the code does in its current state:
+
+1. It includes necessary header files for the PIC18F4520 microcontroller, XC compiler, standard library, and a custom header file `"lab2.h"`.
+2. The `main` function is defined, but most of its content is commented out.
+3. It configures `TRISD` as an output port with the lower 4 bits set as inputs.
+4. It sets `PORTDbits.RD0` to 1 and then immediately to 0, toggling the state of RD0.
+5. It repeats the same for RD1 and RD3, toggling their states.
+6. It then sets PORTD to `0x0D` and immediately to `0x00`, which might just be a way to change the value on PORTD.
+7. It then sets PORTD to `0x0F` and clears all individual bits (RD0, RD1, RD2, RD3).
+*/
+
+#include <xc.h>
+#include <pic18f4520.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "lab2.h"
+
+
+void main(void) {
+    TRISD=0xf0;
+    
+    PORTDbits.RD0=1;
+
+    PORTDbits.RD0=0;
+ 
+
+    PORTDbits.RD1=1;
+
+    PORTDbits.RD1=0;
+    
+    PORTDbits.RD3=1;
+    PORTDbits.RD3=0;
+
+    PORTD = 0x0D;
+    PORTD = 0x00;
+
+    PORTD = 0x0F;
+    PORTDbits.RD0 = 0;
+    PORTDbits.RD1 = 0;
+    PORTDbits.RD2 = 0;
+    PORTDbits.RD3 = 0;
+ /*
+    //================================
+    // PORT A
+    //================================
+    
+    
+    TRISA=0xF0;
+
+    PORTAbits.RA0=1;
+    PORTAbits.RA0=0;
+    
+    PORTAbits.RA1=1;
+    PORTAbits.RA1=0;
+    
+    PORTAbits.RA3=1;
+    PORTAbits.RA3=0;
+
+    PORTA = 0x0D;
+    PORTA = 0x00;
+    
+    PORTA = 0x0F;
+    PORTAbits.RA0 = 0;
+    PORTAbits.RA1 = 0;
+    PORTAbits.RA2 = 0;
+    PORTAbits.RA3 = 0;
+    
+    //================================
+    // PORT B
+    //================================
+    
+    TRISB=0xF0;
+    
+    PORTBbits.RB0=1;
+    PORTBbits.RB0=0;
+    
+    PORTBbits.RB1=1;
+    PORTBbits.RB1=0;
+    
+    PORTBbits.RB3=1;
+    PORTBbits.RB3=0;
+
+    PORTB = 0x0D;
+    PORTB = 0x00;
+
+    PORTB = 0x0F;
+    PORTBbits.RB0 = 0;
+    PORTBbits.RB1 = 0;
+    PORTBbits.RB2 = 0;
+    PORTBbits.RB3 = 0;
+    
+*/
+}

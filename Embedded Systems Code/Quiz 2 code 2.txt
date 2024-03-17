@@ -1,0 +1,34 @@
+ #include <stdio.h>
+ 
+ int main(void){
+ 
+	int total = 0, i;
+	
+	while(total < 1000){
+	
+		total += 1;
+	
+	}
+ 
+	printf("The Total is %d" + total);
+ 
+ }
+
+Description 
+
+This C code appears to contain a loop that continuously increments a variable `total` until it reaches a value of 1000. However, there's an issue with the `printf` statement.
+
+Here's a breakdown of what the code does:
+
+1. It includes the standard input/output library `<stdio.h>`.
+2. It defines the `main` function, which returns an integer (`int`).
+3. Inside `main`, it declares two variables: `total` initialized to 0 and `i`.
+4. It enters a `while` loop that continues as long as the `total` is less than 1000.
+   - Inside the loop, it increments `total` by 1 on each iteration.
+5. After the loop, it attempts to print the value of `total` using `printf`. However, there's an issue with the `printf` statement. It should use `%d` to specify the placeholder for the integer value of `total`, but instead, it attempts to concatenate the string "The Total is " with the memory address of `total`.
+   - This line should be corrected to: `printf("The Total is %d", total);`.
+6. The program doesn't return any value (`return 0;` is missing at the end of `main`).
+
+Once the issue with `printf` is corrected, the program should print "The Total is 1000", as it will increment `total` until it reaches 1000. 
+
+This code appears to be designed for a general-purpose environment, such as a desktop or laptop computer, as it utilizes standard input/output functions and doesn't contain any hardware-specific instructions.
